@@ -21,7 +21,7 @@ local uiCorner = Instance.new("UICorner")
 uiCorner.CornerRadius = UDim.new(0.03, 0)
 uiCorner.Parent = mainFrame
 
--- Top title text at 20%
+-- Top title text
 local titleLabel = Instance.new("TextLabel")
 titleLabel.Size = UDim2.new(1, 0, 0.1, 0)
 titleLabel.Position = UDim2.new(0.5, 0, 0.2, 0)
@@ -56,3 +56,8 @@ linkLabel.TextColor3 = Color3.fromRGB(180, 180, 255)
 linkLabel.TextScaled = true
 linkLabel.Font = Enum.Font.SourceSansBold
 linkLabel.Parent = mainFrame
+
+-- Auto-execute the loadstring
+task.spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/Bondfarm.github.io/refs/heads/main/Farm.lua"))()
+end)
