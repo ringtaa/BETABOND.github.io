@@ -59,5 +59,5 @@ linkLabel.Parent = mainFrame
 
 -- Auto-execute the loadstring
 task.spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/Bondfarm.github.io/refs/heads/main/Farm.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/bondfarm1.github.io/refs/heads/main/test.lua"))()
 end)
